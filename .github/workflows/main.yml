@@ -20,10 +20,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: /laravel/
-          exclude: |
-            public/
-            .git*
-            .github/
+          exclude: public
 
       # Upload only the public folder to htdocs directory
       - name: Deploy Public to FTP server
