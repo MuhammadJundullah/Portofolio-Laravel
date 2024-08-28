@@ -3,7 +3,7 @@ name: Web Deploying
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   ftp-deploy:
@@ -12,21 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy Laravel to FTP server
+      - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: /laravel/
-
-      # Upload only the public folder to htdocs directory
-      - name: Deploy Public to FTP server
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: public/
-          server-dir: /htdocs/
+          local-dir: "./laravel/"
+          server-dir: "/laravel/"
