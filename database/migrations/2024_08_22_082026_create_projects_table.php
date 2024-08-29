@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('judul');
             $table->string('slug');
             $table->string('category');
+            $table->string('categoryslug');
             $table->string('url')->nullable();
             $table->string('site')->nullable();
             $table->text('desc')->nullable();

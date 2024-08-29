@@ -31,7 +31,7 @@ class Controller extends BaseController
         $project = Project::where('slug', $slug)->firstOrFail();
 
         // Nama view berdasarkan category
-        $viewName = strtolower($project->category);
+        $viewName = strtolower($project->categoryslug);
 
         // Tampilkan view dengan data proyek
         return View::make($viewName, ['project' => $project]);

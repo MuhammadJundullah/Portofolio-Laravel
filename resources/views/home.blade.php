@@ -74,10 +74,10 @@
 
                   <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                       <div class="card animate">
-                          <div class="card-body" >                            
+                          <div class="card-body bg-light" >                            
                               <h5 class="card-title">{{ $project->judul }}</h5>
-                              <p class="card-text fw-light">{{ $project->category }}</p>
-                              <a class="text-success custom-link" href="/{{ $project->category }}/{{ $project->slug }}">Read More &raquo;</a>
+                              <p class="card-text fw-light text-secondary">{{ $project->category }}.</p>
+                              <a class="text-success custom-link" href="/{{ $project->categoryslug }}/{{ $project->slug }}">Details &raquo;</a>
                           </div>  
                       </div>
                   </div>
@@ -164,7 +164,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
               <div class="card mx-auto animate mb-3" style="width: 18rem;">
-                <img src="images/education/{{ $education->name }}" class="card-img-top" alt="Dqlab Certificate">
+                <img src="images/Education/{{ $education->name }}" class="card-img-top" alt="Dqlab Certificate">
                 <div class="card-body">
                   <hr>
                   <p class="fw-bold">{{ $education->school }}</p>

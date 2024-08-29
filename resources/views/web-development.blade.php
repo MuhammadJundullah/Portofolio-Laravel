@@ -18,7 +18,7 @@
         <div class="row text-center fs-5 justify-content-around mb-5">
           <div class="col-md-10 fw-light mb-5 pb-5">
               <p>Visit site : <a class="text-success custom-link" href="{{ $project->site }}" target="blank_">{{ $project->judul }}</a></p>
-              <p>Source Code : <a class="text-success custom-link" href="{{ $project->url }}" target="blank_">Github.</a></p>
+              <p>Source Code on <a class="text-success custom-link" href="{{ $project->url }}" target="blank_">Github.</a></p>
           </div>
         </div>
       </div>
