@@ -3,7 +3,7 @@
 <section>
 
     <!-- body -->
-    <section id="about" class="section-hidden">
+    <x-projects>
       <div class="container">
         <div class="row text-center mb-3 mt-5">
           <div class="col fw-light">
@@ -22,9 +22,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </x-projects>
     <!-- Akhir body -->
-
 
 </section>
 

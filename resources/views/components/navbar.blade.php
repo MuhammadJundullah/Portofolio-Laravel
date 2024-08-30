@@ -10,7 +10,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
       <div class="container">
         <div>
-        <h2 style="margin-right: 550px;">Sayid's Portofolio</h2>
+        <h2 class="fw-light">Sayid's Portofolio</h2>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
