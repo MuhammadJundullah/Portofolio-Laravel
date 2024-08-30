@@ -15,14 +15,17 @@ class Controller extends BaseController
         // Ambil semua data dari tabel products
         $projects = Project::all();
 
-        // Ambil semua data dari tabel products
+        // Ambil semua data dari tabel certificate
         $certificates = Certificate::all();
 
-        // Ambil semua data dari tabel products
+        // Ambil data tersatas dari tabel certificate
+        $lastupdate = Certificate::latest()->first();
+
+        // Ambil semua data dari tabel education
         $educations = Education::all();
         
         // Kirim data ke view
-        return view('home', compact('projects', 'certificates', 'educations'));
+        return view('home', compact('projects', 'certificates', 'educations', 'lastupdate'));
     }
 
     public function show($slug)
@@ -37,3 +40,4 @@ class Controller extends BaseController
         return View::make($viewName, ['project' => $project]);
     }
 }
+    

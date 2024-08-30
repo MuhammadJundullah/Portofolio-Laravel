@@ -16,15 +16,12 @@ return new class extends Migration
             $table->string('name');
             $table->string('desc');
             $table->string('date');
+            $table->timestamps();
         });
     }
 
     public function down(): void
     {
         Schema::dropIfExists('certificates');
-
-        Schema::table('certificates', function (Blueprint $table) {
-        $table->dropTimestamps();
-        });
     }
 };

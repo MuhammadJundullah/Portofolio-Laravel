@@ -5,13 +5,10 @@
       </svg>
     </a>
     {{-- akhir toggle untuk kembali ke atas --}}
-    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
       <div class="container">
-        <div>
-        <h2 class="fw-light">Sayid's Portofolio</h2>
-        </div>
+        <h2 class="fw-lighter fs-2">Sayid's Portofolio</h2>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

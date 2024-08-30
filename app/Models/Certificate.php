@@ -10,5 +10,5 @@ class Certificate extends Model
 
     protected $fillable = ['name', 'desc', 'date']; // Kolom yang bisa diisi
 
-    public $timestamps = false; // Jika tabel tidak memiliki kolom timestamps (created_at, updated_at)
+    public $timestamps = true; // Jika tabel tidak memiliki kolom timestamps (created_at, updated_at)
 }

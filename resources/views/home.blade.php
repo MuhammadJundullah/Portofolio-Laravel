@@ -1,10 +1,14 @@
 <x-layout>
 
+    <x-slot name="update">
+        {{ $lastupdate->created_at->diffForHumans() }}
+    </x-slot>
+
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <h2 class="display-6 fw-light pt-5 mt-5">Hello !</h2>
+      <h2 class="display-6 fw-light pt-5 mt-5 font-monospace">Hello !</h2>
       <h1 class="display-6 fw-bold">I'm Sayid Muhammad Jundullah</h1>
-      <p class="lead text-secondary">Web Development | Data Analytics | Data Science</p>
+      <p class="lead text-secondary ">Web Development | Data Analytics | Data Science</p>
 
       <!-- get sayid's resume -->
       {{-- <div class="btn-group" role="group" aria-label="Basic example">
@@ -181,5 +185,7 @@
       </div>
     </section>
     <!-- Akhir Education -->
+
+    <p style="margin-left:10px;" class="fs-6 fw-lighter text-secondary text-center"><i>*This portfolio was last updated {{ $lastupdate->created_at->format('F j, Y, \a\t g:i A') }}.</i></p>
 
 </x-layout>

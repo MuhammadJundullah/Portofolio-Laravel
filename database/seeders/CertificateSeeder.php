@@ -5,6 +5,9 @@ namespace Database\Seeders;
 use App\Models\Certificate;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
 
 class CertificateSeeder extends Seeder
 {
@@ -24,6 +27,9 @@ class CertificateSeeder extends Seeder
             ['name' => 'ds_pijarmahir.png', 'desc' => 'Mahir Data Science dari nol.', 'date' => '28 Agustus 2024'],
             // Tambahkan data lainnya sesuai kebutuhan
         ];
+
+           
+    
 
         // Mengisi data ke dalam tabel
         foreach ($certificates as $certificate) {
