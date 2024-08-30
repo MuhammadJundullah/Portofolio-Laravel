@@ -8,17 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script> 
 
-    <script>
-  // Fungsi untuk mendeteksi ukuran layar dan menampilkan alert jika di perangkat mobile
-  function checkMobile() {
-    if (window.innerWidth <= 767) {
-      alert("Access this website on a laptop or PC for an enhanced experience.");
-    }
-  }
+ 
 
-  // Jalankan fungsi saat halaman dimuat
-  window.onload = checkMobile;
-</script>
+
 
 
     

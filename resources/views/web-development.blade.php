@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row text-center mb-3 mt-5">
           <div class="col fw-light">
-            <h2 class="font-judul">{{ $project->judul }}</h2>
+            <h2 class="font-judul">About {{ $project->judul }}</h2>
           </div>
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
@@ -27,5 +27,7 @@
 
 
 </section>
+
+@extends('components.mobilealert')
 
 </x-layout>
