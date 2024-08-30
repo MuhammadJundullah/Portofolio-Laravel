@@ -32,13 +32,13 @@
       <div class="container">
         <div class="row text-center mb-3 mt-5">
           <div class="col fw-light">
-            <h2 class="font-judul">About Me</h2>
+            <h2 class="font-judul fw-light">About Me</h2>
           </div>
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
           <div class="col-md-10 fw-light">
-              <p class="fs-6 fs-md-5 fs-lg-4">I am a 5th-semester Computer Engineering student with a GPA of 3.56/4.00. I am highly interested in learning data analysis and processing, and I have experience using Microsoft Excel, Python, and SQL for data manipulation, as well as Tableau and Power BI for data visualization. I apply statistical techniques to analyze and display data characteristics and have worked on several data analysis projects.</p>         
-              <p class="fs-6 fs-md-5 fs-lg-4">Currently, I am seeking an internship opportunity to further develop my data analysis skills in a professional environment. Additionally, I have web development skills using Laravel, which enables me to build dynamic and efficient web applications. </p>        
+              <p class=" fs-6">I am a 5th-semester Computer Engineering student with a GPA of 3.56/4.00. I am highly interested in learning data analysis and processing, and I have experience using Microsoft Excel, Python, and SQL for data manipulation, as well as Tableau and Power BI for data visualization. I apply statistical techniques to analyze and display data characteristics and have worked on several data analysis projects.</p>         
+              <p class=" fs-6">Currently, I am seeking an internship opportunity to further develop my data analysis skills in a professional environment. Additionally, I have web development skills using Laravel, which enables me to build dynamic and efficient web applications. </p>        
             <!-- Instagram -->
             <a class="sosmed" href="https://instagram.com/saed.m_" target="_blank"><img src="images/instagram.svg" alt="instagram" style="height: 30px; margin: 5%" /></a>
             <!-- twitter -->
@@ -66,7 +66,7 @@
 
           <div class="row text-center mt-5">
             <div class="col">
-              <h2 class="font-judul">My Projects</h2>
+              <h2 class="font-judul fw-light">My Projects</h2>
             </div>
           </div>
         
@@ -107,7 +107,7 @@
       <div class="container" style="padding-bottom: 10rem">
         <div class="row text-center mt-5 mb-3">
           <div class="col">
-            <h2 class="font-judul">Certification</h2>
+            <h2 class="font-judul fw-light">Certification</h2>
           </div>
         </div>
 
@@ -159,7 +159,7 @@
       <div class="container" style="padding-bottom: 10rem">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2 class="font-judul">Education</h2>
+            <h2 class="font-judul fw-light">Education</h2>
           </div>
         </div>
           <div class="row justify-content-center">
