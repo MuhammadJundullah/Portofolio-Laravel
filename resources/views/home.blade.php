@@ -37,8 +37,7 @@
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
           <div class="col-md-10 fw-light">
-              <p class=" fs-6">I am a 5th-semester Computer Engineering student with a GPA of 3.56/4.00. I am highly interested in learning data analysis and processing, and I have experience using Microsoft Excel, Python, and SQL for data manipulation, as well as Tableau and Power BI for data visualization. I apply statistical techniques to analyze and display data characteristics and have worked on several data analysis projects.</p>         
-              <p class=" fs-6">Currently, I am seeking an internship opportunity to further develop my data analysis skills in a professional environment. Additionally, I have web development skills using Laravel, which enables me to build dynamic and efficient web applications. </p>        
+              <p class="fs-6 fs-md-3">Saya mahasiswa  semester 5 jurusan Teknik Informatika di Universitas Malikussaleh dengan IPK 3,56 / 4.00, saya sangat tertarik mempelajari hal baru terkakit teknologi, terutama dalam bidang data dan pengembangan web. saya senang belajar secara otodidak dari sumber terbuka seperti youtube, artikel dsb. Saya juga aktif mengikuti beberapa course bersertifikat, untuk meningkatkan pemahaman, pengetahuan dan skill saya dalam pengolahan data dan pengembangan web. Untuk melatih kemampuan saya dalam hal tersebut saya memiliki beberapa proyek yang saya kerjakan, seperti tugas web sederhana di perkuliahan dan berkontribusi untuk mencari solusi permasalahan bisnis di situs kaggle.com berdasarkan data yang disediakan secara tebuka. Saya bersedia untuk berkolaborasi untuk menyelesaikan permasalahan di bidang data dan pengembangan web. Saat ini, saya mencari kesempatan magang untuk mengembangkan kemampuan dan menambah pengalaman saya di bidang data untuk posisi seperti Data Analyst, Data Scientist atau pengembangan web seperti Front End Web Developer, Back End Web Developer, atau Full Stack Web Developer di lingkungan professional.</p>         
             <!-- Instagram -->
             <a class="sosmed" href="https://instagram.com/saed.m_" target="_blank"><img src="images/instagram.svg" alt="instagram" style="height: 30px; margin: 5%" /></a>
             <!-- twitter -->
@@ -186,6 +185,6 @@
     </section>
     <!-- Akhir Education -->
 
-    <p style="margin-left:10px;" class="fs-6 fw-lighter text-secondary text-center"><i>*This portfolio was last updated {{ $lastupdate->created_at->format('F j, Y, \a\t g:i A') }}.</i></p>
+    <p style="margin:10px;" class="fs-6 fw-lighter text-secondary text-center"><i>*This portfolio was last updated {{ $lastupdate->created_at->format('F j, Y, \a\t g:i A') }}.</i></p>
 
 </x-layout>
