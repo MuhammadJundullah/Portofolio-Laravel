@@ -20,13 +20,42 @@ class CertificateSeeder extends Seeder
     {
         // Data yang ingin diisi
         $certificates = [
-            ['name' => 'ds_pijarmahir.png', 'desc' => 'Mahir Data Science dari nol.', 'date' => '28 Agustus 2024'],
-            ['name' => 'dqlab_py.png', 'desc' => 'Introduction to Data Science with Python.', 'date' => '12 August 2023'],
-            ['name' => 'dqlab_fundamental_py.png', 'desc' => 'Python Fundamental for Data Science.', 'date' => '1 September 2024'],
-            ['name' => 'dqlab_r.png', 'desc' => 'Introduction to Data Science with R.', 'date' => '12 May 2023'],
-            ['name' => 'dqlab_sql.png', 'desc' => 'Fundamental SQL Using SELECT Statement.', 'date' => '1 September 2024'],
-            ['name' => 'pmm.png', 'desc' => 'Pertukaran Mahasiswa Merdeka Batch 3.', 'date' => '5 April 2024'],
-            ['name' => 'inpro.png', 'desc' => '3rd Place in Product Innovation Competition.', 'date' => '2019'],
+            ['name' => 'ds_pijarmahir.png', 
+             'desc' => 'Mahir Data Science dari nol.', 
+             'date' => '28 Agustus 2024',
+             'site' => 'https://drive.google.com/file/d/1QpZ4Vnkty_we6rleedKKKhSWmxyA-XGx/view?usp=share_link'
+            ],
+            ['name' => 'dqlab_py.png', 
+             'desc' => 'Introduction to Data Science with Python.', 
+             'date' => '12 August 2023',
+             'site' => 'https://academy.dqlab.id/Certificate_check/result/DQLABINTP1TNWPMF#mycertificate'
+            ],
+            ['name' => 'dqlab_fundamental_py.png', 
+            'desc' => 'Python Fundamental for Data Science.', 
+            'date' => '1 September 2024',
+            'site' => 'https://academy.dqlab.id/Certificate_check/result/DQLABINTP1SPEBRR#mycertificate'
+            ],
+            ['name' => 'dqlab_r.png', 
+             'desc' => 'Introduction to Data Science with R.', 
+             'date' => '12 May 2023',
+             'site' => 'https://academy.dqlab.id/Certificate_check/result/DQLABBGINRQBWDEU#mycertificate'
+            ],
+            ['name' => 'dqlab_sql.png', 
+             'desc' => 'Fundamental SQL Using SELECT Statement.', 
+             'date' => '1 September 2024',
+             'site' => 'https://academy.dqlab.id/Certificate_check/result/DQLABSQLT1GKBFUV#mycertificate'
+
+            ],
+            ['name' => 'pmm.png', 
+             'desc' => 'Pertukaran Mahasiswa Merdeka Batch 3.', 
+             'date' => '5 April 2024',
+             'site' => 'https://drive.google.com/file/d/1igaAwwqSovc7jSD8nssTuXuZxkQuIQPj/view?usp=sharing'
+            ],
+            ['name' => 'inpro.png', 
+             'desc' => '3rd Place in Product Innovation Competition.', 
+             'date' => '2019',
+             'site' => 'https://drive.google.com/file/d/1cpvyMiWUawg8dvedXn6VfBCLDrrg5b51/view?usp=share_link'
+            ],
             // Tambahkan data lainnya sesuai kebutuhan
         ];
 

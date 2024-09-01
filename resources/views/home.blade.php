@@ -130,8 +130,9 @@
                   <div class="card mx-auto animate mb-3 " style="width: 18rem;">
                       <img src="images/Certificate/{{ $certificate->name }}" alt="Image" data-toggle="modal" data-target="#imageModal{{ $index }}" style="width: 286px; cursor: pointer;">
                       <div class="card-body">
-                          <p class="card-text fw-light">{{ $certificate->desc }}<br><hr>
-                          <span class="text-secondary fst-italic">{{ $certificate->date }}</span></p>
+                        <a class="text-dark custom-link" href="{{ $certificate->site }}"><p class="card-text fw-light">{{ $certificate->desc }}<p></a>
+                          <hr>
+                          <p class="text-secondary fst-italic">{{ $certificate->date }}</p></p>
                       </div>
                   </div>
               </div>
