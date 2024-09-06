@@ -13,7 +13,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarNav">
-          <ul class="navbar-nav ms-auto mx-auto">
+          <ul class="navbar-nav mx-auto ">
             <li class="nav-item">
               <a class="nav-link" href="/#home">Hello</a>
             </li>

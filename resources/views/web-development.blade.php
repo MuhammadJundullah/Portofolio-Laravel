@@ -12,7 +12,7 @@
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
           <div class="col-md-10 fw-light pb-4">
-              <p class="fs-6 fs-md-5 fs-lg-4">{{ $project->desc }}</p>
+              <p class="fs-6 fs-md-5 fs-lg-4 mb-5">{{ $project->desc }}</p>
           </div>
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">

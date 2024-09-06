@@ -23,7 +23,7 @@ class CertificateSeeder extends Seeder
             ['name' => 'ds_pijarmahir.png', 
              'desc' => 'Mahir Data Science dari nol.', 
              'date' => '28 Agustus 2024',
-             'site' => 'https://drive.google.com/file/d/1QpZ4Vnkty_we6rleedKKKhSWmxyA-XGx/view?usp=share_link'
+             'site' => 'https://pijarmahir.id/sertifikat/vNcoF8pYHX'
             ],
             ['name' => 'dqlab_py.png', 
              'desc' => 'Introduction to Data Science with Python.', 

@@ -6,9 +6,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <h2 class="display-6 fw-light pt-5 mt-5 font-monospace">Hello !</h2>
-      <h1 class="display-6 fw-bold">I'm Sayid Muhammad Jundullah</h1>
-      <p class="lead text-secondary ">Web Development | Data Analytics | Data Science</p>
+      <h2 class="display-6 pt-5 mt-5 font-monospace">Hello, I'm</h2>
+      <h1 class="display-6 fw-bold">Sayid Muhammad Jundullah</h1>
+      <p class="lead text-secondary fw-lighter">Web Development | Data Analytics | Data Science</p>
 
       <!-- get sayid's resume -->
       {{-- <div class="btn-group" role="group" aria-label="Basic example">
