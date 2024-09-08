@@ -59,9 +59,6 @@ class CertificateSeeder extends Seeder
             // Tambahkan data lainnya sesuai kebutuhan
         ];
 
-           
-    
-
         // Mengisi data ke dalam tabel
         foreach ($certificates as $certificate) {
             Certificate::create($certificate);

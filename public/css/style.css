@@ -19,9 +19,14 @@ section {
 /* hover navbar link */
 .nav-link {
     position: relative;
-    transition: color 0.3s ease;
+    transition: color 1.3s ease;
 }
-.nav-link::after {
+
+.nav-link:hover {
+    opacity: 50%;
+}
+
+/* .nav-link::after {
     content: "";
     position: absolute;
     width: 0;
@@ -32,11 +37,11 @@ section {
     transition: width 0.2s ease, left 0.2s ease;
     bottom: 0;
     left: 50%;
-}
-.nav-link:hover::after {
+} */
+/* .nav-link:hover::after {
     width: 100%;
     left: 0;
-}
+} */
 
 a {
     text-decoration: none;

@@ -19,14 +19,23 @@
 
 use Illuminate\Support\Facades\View;
 use App\Models\Project;
+use Illuminate\Http\Request;
+use GuzzleHttp\Client;
 
 $router->get('/', 'Controller@index', function () {
     return View::make('/home');
 });
 
 $router->get('/{category}/{slug}', 'Controller@show', function ( Project $project) {
-    return View::make('{category}', ['project' => $project]);
+    return View::make('{category}');
 });
+
+$router->post('/{category}/{slug}', 'Controller@show', function ( Project $project) {
+    return View::make('{category}');
+});
+
+
+
 
 
 
