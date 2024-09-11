@@ -25,7 +25,7 @@
           {!! $project->site !!}
 
         </div>
-        <p>Notebook : <a class="text-success custom-link" href="{{ $project->url }}" target="_blank">Github.</a></p>
+        <p>Notebook analysis : <a class="text-success custom-link" href="{{ $project->url }}" target="_blank">Github.</a></p>
       </div>
     </x-projects>
     <!-- Akhir body -->
