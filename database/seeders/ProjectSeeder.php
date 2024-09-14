@@ -23,7 +23,7 @@ class ProjectSeeder extends Seeder
              'categoryslug' => 'data-analytics', 
              'url' => 'https://github.com/MuhammadJundullah/Data-Analysis/tree/main/MSIB%20Vacancy%20Analysis', 
              'site' => '<iframe title="MSIB Vacancy Analysis" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiODY1OGE2ODYtOGZiZS00Yjc2LWIyN2EtOTFhMjhhMmM2N2EwIiwidCI6IjlkNjQ0ZjE3LTkyMjYtNDUyZC05ZTZhLTFmMThhN2U2NTFmNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>', 
-             'desc' => 'Analisis deskriptif ini yang dilakukan untuk memahami lowongan MSIB Batch 6 agar mendapatkan gambaran umum tentang distribusi kuota dan lowongan data analyst yang tersedia. Analisis ini mencakup identifikasi mitra dengan kuota terbanyak, lokasi lowongan, dan perbandingan jumlah lowongan Data Analyst dengan lowongan lainnya. Visualisasi data dilakukan dengan Microsoft Power BI untuk mempermudah interpretasi hasil analisis. Untuk melihat proses data cleaning menggunakan Python silahkan kunjungi Notebook Analysis di bawah Dashboard.'],
+             'desc' => 'Analisis deskriptif ini yang dilakukan untuk memahami lowongan MSIB Batch 6 agar mendapatkan gambaran umum tentang distribusi kuota dan lowongan data analyst yang tersedia. Analisis ini mencakup identifikasi mitra dengan kuota terbanyak, lokasi lowongan, dan perbandingan jumlah lowongan Data Analyst dengan lowongan lainnya. Visualisasi data dilakukan dengan <b>Microsoft Power BI</b> untuk mempermudah interpretasi hasil analisis. Untuk melihat proses <b>Data Cleaning</b> menggunakan <b>Python</b> silahkan kunjungi Notebook Analysis di bawah Dashboard.'],
 
             ['judul' => 'Airline Delay Cause Analysis', 
              'slug' => 'airline-delay-cause-analysis', 
@@ -72,8 +72,8 @@ class ProjectSeeder extends Seeder
              'url' => 'https://github.com/MuhammadJundullah/Data-Analysis/tree/main/Car%20Sales%20Analysis', 
              'site' => '<iframe title="Car Sales Report" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiODUzN2ExN2QtNmIzZS00NDEwLTgwOWItNGRmM2JkOWZiZGVjIiwidCI6IjlkNjQ0ZjE3LTkyMjYtNDUyZC05ZTZhLTFmMThhN2U2NTFmNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>',
              'desc' => 'Analisis ini bertujuan untuk mengetahui tren pasar penjualan mobil, preferensi konsumen, dan pola musiman dalam penjualan, untuk memberikan wawasan yang dapat membantu meningkatkan pemasaran/ penjualan. Analisis yang dilakukan yaitu; Data Cleaning  untuk memastikan keakuratan dan keandalan analisis, Exploratory Data Analysis penjualan mobil untuk mengidentifikasi tren pasar, preferensi pelanggan, dan pola musiman, melakukan visualisasi data menggunakan Microsoft Power BI untuk mendapatkan insight tentang kinerja penjualan, demografi pelanggan, dan faktor-faktor yang memengaruhi keputusan pembelian. Mengimplementasikan Algoritma Machine learning model peramalan  (SARIMA) untuk memprediksi penjualan di masa mendatang dan memberikan rekomendasi yang dapat ditindaklanjuti. Menerapkan pengetahuan data science dan machine learning untuk memberikan wawasan berharga yang dapat meningkatkan strategi penjualan, pemasaran, dan pengembangan produk di industri otomotif.'],
-             
-             ['judul' => 'Bank Customers Churn Analysis', 
+
+             ['judul' => 'Bank Customers Churn Analysis',
              'slug' => 'bank-customers-churn-analysis', 
              'category' => 'Data Science', 
              'categoryslug' => 'data-science', 

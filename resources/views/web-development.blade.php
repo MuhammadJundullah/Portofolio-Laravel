@@ -5,8 +5,9 @@
     <!-- body -->
     <x-projects>
       <div class="container">
-        <div class="row text-center mb-3 mt-5">
-          <div class="col fw-light">
+        <div style="margin-top: -20px" class="row mb-3">
+          <p style="opacity: 40%" class="mb-5"><a class="text-secondary custom-link" href="/#projects">Projects</a> &raquo; <a class="text-secondary custom-link" href="">{{ $project->judul }}</a></p>  
+          <div class="col text-center fw-light">
             <h2 class="font-judul">About {{ $project->judul }}</h2>
           </div>
         </div>
@@ -16,7 +17,7 @@
           </div>
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
-          <div class="col-md-10 fw-light mb-5 pb-5">
+          <div class="col-md-10 fw-light pb-5 mb-4">
               <p>Visit site : <a class="text-success custom-link" href="{{ $project->site }}" target="blank_">{{ $project->judul }}</a></p>
               <p>Source Code on <a class="text-success custom-link" href="{{ $project->url }}" target="blank_">Github.</a></p>
           </div>

@@ -5,14 +5,15 @@
     <!-- body -->
     <x-projects>
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col fw-light">
+        <div style="margin-top: -20px" class="row mb-3">
+          <p style="opacity: 40%" class="mb-5"><a class="text-secondary custom-link" href="/#projects">Projects</a> &raquo; <a class="text-secondary custom-link" href="">{{ $project->judul }}</a></p>  
+          <div class="col text-center fw-light">
             <h2 class="font-judul">About {{ $project->judul }}</h2>
           </div>
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
           <div class="col-md-10 fw-light">
-              <p class="fs-6 fs-md-5 fs-lg-4">{{ $project->desc }}</p>
+              <p class="fs-6 fs-md-5 fs-lg-4">{!! $project->desc !!}</p>
           </div>
         </div>
         {{-- <div class="row text-center fs-5 justify-content-around mb-5">
