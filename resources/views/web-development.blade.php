@@ -28,6 +28,4 @@
 
 </section>
 
-@extends('components.mobilealert')
-
 </x-layout>
