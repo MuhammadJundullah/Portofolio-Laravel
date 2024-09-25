@@ -28,7 +28,7 @@
       <div class="container">
         <div class="row text-center mb-3 mt-5">
           <div class="col fw-light">
-            <h2 class="font-judul fw-light">About Me</h2>
+            <h1 class="font-judul fw-light">About Me</h1>
           </div>
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
@@ -65,7 +65,7 @@
 
           <div class="row text-center mt-5">
             <div class="col">
-              <h2 class="font-judul fw-light">My Projects</h2>
+              <h1 class="font-judul fw-light">My Projects</h1>
             </div>
           </div>
 
@@ -106,7 +106,7 @@
       <div class="container" style="padding-bottom: 10rem">
         <div class="row text-center mt-5 mb-3">
           <div class="col">
-            <h2 class="font-judul fw-light">Certification</h2>
+            <h1 class="font-judul fw-light">Certification</h1>
           </div>
         </div>
 
@@ -157,7 +157,7 @@
       <div class="container" style="padding-bottom: 10rem">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2 class="font-judul fw-light">Education</h2>
+            <h1 class="font-judul fw-light">Education</h1>
           </div>
         </div>
           <div class="row justify-content-center">
