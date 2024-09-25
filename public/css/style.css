@@ -6,72 +6,49 @@ section {
     padding-top: 5rem;
 }
 
+/* navbar transparan */
 .navbar {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.nav-item .nav-link {
-    margin-left: 20px;
-}
-
 /* hover navbar link */
 .nav-link {
-    position: relative;
-    transition: color 1.3s ease;
+    margin-left: 20px;
+    transition: opacity 0.3s ease;
 }
 
+/* kondisi nav-link ketika di hover */
 .nav-link:hover {
     opacity: 50%;
 }
 
-/* .nav-link::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    display: block;
-    margin: auto;
-    background: #000;
-    transition: width 0.2s ease, left 0.2s ease;
-    bottom: 0;
-    left: 50%;
-} */
-/* .nav-link:hover::after {
-    width: 100%;
-    left: 0;
-} */
-
+/* menghilangkan seluruh underline di link */
 a {
     text-decoration: none;
 }
 
+/* font untuk setiap judul besar*/
 .font-judul {
     font-family: "Edu VIC WA NT Beginner", cursive;
 }
 
-/* ketika di mobile tidak ada hover */
-@media (max-width: 767px) {
-    .nav-link:hover::after {
-        width: 0;
-        left: 50%;
-    }
-}
-
-/* hover card */
+/* hover card/ item di setiap section*/
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    transition: transform 0.3s ease, box-shadow 0.5s ease,
+        background-color 0.3s ease !important;
 }
 
 .card:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
 }
 
 /* animasi card ketika di viewport */
 @keyframes fadeInUp {
     from {
-        transform: translateY(20px);
+        transform: translateY(50px);
         opacity: 0;
     }
     to {
@@ -133,9 +110,9 @@ a {
 
 /* link hover */
 .custom-link {
-    text-decoration: none; /* Hilangkan garis bawah default */
+    text-decoration: none;
 }
 
 .custom-link:hover {
-    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+    text-decoration: underline;
 }

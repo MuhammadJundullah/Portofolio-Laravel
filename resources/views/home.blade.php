@@ -1,9 +1,5 @@
 <x-layout>
 
-    <x-slot name="update">
-        {{ $lastupdate->created_at->diffForHumans() }}
-    </x-slot>
-
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
       <h2 class="display-6 pt-5 mt-5 font-monospace text-secondary">Hello, I'm</h2>
@@ -37,7 +33,11 @@
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
           <div class="col-md-10 fw-light">
-              <p class="fs-6 fs-md-3">Saya mahasiswa  semester 5 jurusan Teknik Informatika di Universitas Malikussaleh dengan IPK 3,56 / 4.00, saya sangat tertarik mempelajari hal baru terkakit teknologi, terutama dalam bidang data dan pengembangan web. saya senang belajar secara otodidak dari sumber terbuka seperti youtube, artikel dsb. Saya juga aktif mengikuti beberapa course bersertifikat, untuk meningkatkan pemahaman, pengetahuan dan skill saya dalam pengolahan data dan pengembangan web. Untuk melatih kemampuan saya dalam hal tersebut saya memiliki beberapa proyek yang saya kerjakan, seperti tugas web sederhana di perkuliahan dan berkontribusi untuk mencari solusi permasalahan bisnis di situs kaggle.com berdasarkan data yang disediakan secara tebuka. Saya bersedia untuk berkolaborasi untuk menyelesaikan permasalahan di bidang data dan pengembangan web. Saat ini, saya mencari kesempatan magang untuk mengembangkan kemampuan dan menambah pengalaman saya di bidang data untuk posisi seperti Data Analyst, Data Scientist atau pengembangan web seperti Front End Web Developer, Back End Web Developer, atau Full Stack Web Developer di lingkungan professional.</p>
+               <p class="fs-6">
+                  Saya mahasiswa  semester 5 jurusan Teknik Informatika di Universitas Malikussaleh dengan IPK 3,56 / 4.00, saya sangat tertarik mempelajari hal baru terkakit teknologi, terutama dalam bidang data dan pengembangan web. Saya senang belajar secara otodidak dari sumber terbuka seperti youtube, artikel dsb.   
+                  <span class="more" style="display: none">Saya juga aktif mengikuti beberapa course bersertifikat, untuk meningkatkan pemahaman, pengetahuan dan skill saya dalam pengolahan data dan pengembangan web. Untuk melatih kemampuan saya dalam hal tersebut saya memiliki beberapa proyek yang saya kerjakan, seperti tugas web sederhana di perkuliahan dan berkontribusi untuk mencari solusi permasalahan bisnis di situs kaggle.com berdasarkan data yang disediakan secara tebuka. Saya bersedia untuk berkolaborasi untuk menyelesaikan permasalahan di bidang data dan pengembangan web. Saat ini, saya mencari kesempatan magang untuk mengembangkan kemampuan dan menambah pengalaman saya di bidang data untuk posisi seperti Data Analyst, Data Scientist atau pengembangan web seperti Front End Web Developer, Back End Web Developer khususnya Laravel di lingkungan professional. Jika Anda membutuhkan informasi lebih lanjut atau ingin mendiskusikan peluang kerja sama, jangan ragu untuk menghubungi saya. Saya dengan senang hati akan menjawab pertanyaan atau memberikan informasi tambahan yang Anda perlukan. Anda dapat menghubungi saya melalui sosial media saya di bawah ini.</span>
+                  <a href="#" id="read-more" onclick="toggleText(event)">Read More...</a>
+              </p>
             <!-- Instagram -->
             <a class="sosmed" href="https://instagram.com/saed.m_" target="_blank"><img src="images/instagram.svg" alt="instagram" style="height: 30px; margin: 5%" /></a>
             <!-- twitter -->
@@ -77,10 +77,10 @@
 
                   <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                       <div class="card animate">
-                          <div class="card-body bg-light" >
-                              <h5 class="card-title">{{ $project->judul }}</h5>
-                              <p class="card-text fw-light text-secondary">{{ $project->category }}.</p>
-                              <a class="text-success custom-link" href="/{{ $project->categoryslug }}/{{ $project->slug }}">Details &raquo;</a>
+                          <div class="card-body" >
+                              <h5 class="card-title fw-light">{{ $project->judul }}</h5>
+                              <p class="card-text fw-lighter text-0secondary">{{ $project->category }}.</p>
+                              <a class="text-success custom-link" href="/{{ $project->categoryslug }}/{{ $project->slug }}">Details &raquo;</a>                          
                           </div>
                       </div>
                   </div>
@@ -127,12 +127,10 @@
               </div>
 
               <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                  <div class="card mx-auto animate mb-3 " style="width: 18rem;">
-                      <img src="images/Certificate/{{ $certificate->name }}" alt="Image" data-toggle="modal" data-target="#imageModal{{ $index }}" style="width: 286px; cursor: pointer;">
-                      <div class="card-body">
-                        <a class="text-dark custom-link" href="{{ $certificate->site }}"><p class="card-text fw-light">{{ $certificate->desc }}</a>
-                          <hr>
-                          <p class="text-secondary fst-italic">{{ $certificate->date }}</p></p>
+                  <div class="mx-auto animate mb-3 " style="width: 18rem;">
+                      <img class="card"  src="images/Certificate/{{ $certificate->name }}" alt="Image" data-toggle="modal" data-target="#imageModal{{ $index }}" style="width: 286px; cursor: pointer;">
+                      <div class="card-body mt-3 mb-5">                    
+                        <a class=" text-dark custom-link" href="{{ $certificate->site }}"><p class="card-text fw-light">{{ $certificate->desc }}</a> - <span class="text-secondary fst-italic">{{ $certificate->date }}</span>                    
                       </div>
                   </div>
               </div>
@@ -167,7 +165,7 @@
             @foreach ( $educations as $education )
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-              <div class="card mx-auto animate mb-3" style="width: 18rem;">
+              <div class="mx-auto animate mb-3" style="width: 18rem;">
                 <img src="images/Education/{{ $education->name }}" class="card-img-top" alt="Dqlab Certificate">
                 <div class="card-body">
                   <hr>
@@ -186,6 +184,6 @@
     </section>
     <!-- Akhir Education -->
 
-    <p style="margin:10px;" class="fs-6 fw-lighter text-secondary text-center"><i>*This portfolio was last updated {{ $lastupdate->created_at->format('F j, Y, \a\t g:i A') }}.</i></p>
+    <p style="margin:10px;" class="fs-6 fw-lighter text-secondary text-center"><i>*This portfolio was last updated {{ $lastupdate->created_at->format('F j, Y, \a\t g:i A') }}.</i></p>    
 
 </x-layout>

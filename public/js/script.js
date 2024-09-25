@@ -1,4 +1,4 @@
-// Menganimasikan card saat di viewport
+// Mendeteksi item saat di viewport
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -23,16 +23,30 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 handleScroll();
 
-// buat scroll ke atas
+// scroll otomatis ke atas
 document.addEventListener("DOMContentLoaded", function () {
     const backToTop = document.getElementById("backToTop");
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
-            // Ganti 300 dengan jarak scroll yang diinginkan
             backToTop.classList.add("show");
         } else {
             backToTop.classList.remove("show");
         }
     });
 });
+
+// readmode about section
+function toggleText(event) {
+    event.preventDefault();
+    const moreText = document.querySelector(".more");
+    const linkText = document.getElementById("read-more");
+
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "inline";
+        linkText.textContent = "...Collapse";
+    } else {
+        moreText.style.display = "none";
+        linkText.textContent = "Read More...";
+    }
+}

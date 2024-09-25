@@ -14,8 +14,9 @@ class EducationSeeder extends Seeder
     public function run(): void
     {
         $educations = [
-            ['name' => 'fourta.jpeg', 'school' => 'SMA Negeri 4 Takengon', 'major' => "Natural Sciences Major", 'date' => 'Juli 2019 - juli 2022'],
-            ['name' => 'unimal.png', 'school' => 'Malikussaleh University', 'major' => "Bachelor's Degree Informatics Engineering", 'date' => 'Juli 2022 - Present'],
+            ['name' => 'fourta.jpeg', 'school' => 'SMA Negeri 4 Takengon', 'major' => "Natural Sciences Major", 'date' => 'July 2019 - July 2022'],
+            ['name' => 'unimal.png', 'school' => 'Malikussaleh University', 'major' => "Bachelor's Degree Informatics Engineering", 'date' => 'July 2022 - Present'],
+            ['name' => 'uhamka.png', 'school' => 'Prof. Dr. Hamka University', 'major' => "Exchange Student Informatics Engineering", 'date' => 'September 2023 - February 2024'],
         ];
 
         // Mengisi data ke dalam tabel
