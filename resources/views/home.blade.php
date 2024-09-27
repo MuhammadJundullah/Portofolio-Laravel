@@ -4,7 +4,7 @@
     <section class="jumbotron text-center">
       <h2 class="display-6 pt-5 mt-5 font-monospace text-secondary">Hello, I'm</h2>
       <h1 class="display-6 fw-bold text-judul">Sayid Muhammad Jundullah</h1>
-      <p class="lead text-secondary">Data Science | Data Analytics | Web Development</p>
+      <p class="lead text-dark fw-light"><span class="text-dark fw-lighter">Interest in </span>Data Science <span class="text-secondary fw-lighter">|</span> Data Analytics <span class="text-secondary fw-lighter">|</span> Web Development</p>
 
       <!-- get sayid's resume -->
       {{-- <div class="btn-group" role="group" aria-label="Basic example">
