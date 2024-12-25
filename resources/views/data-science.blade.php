@@ -5,9 +5,9 @@
     <!-- body -->
     <x-projects>
       <div class="container">
-        <div style="margin-top: -20px" class="row mb-3">
+        <div class="row mb-3">
           <p style="opacity: 40%" class="mb-5"><a class="text-secondary custom-link" href="/#projects">Projects</a> &raquo; <a class="text-secondary custom-link" href="">{{ $project->judul }}</a></p>  
-          <div class="col text-center fw-light">
+          <div class="col text-center fw-light mb-4">
             <h2 class="font-judul fw-light">About {{ $project->judul }}</h2>
           </div>
         </div>

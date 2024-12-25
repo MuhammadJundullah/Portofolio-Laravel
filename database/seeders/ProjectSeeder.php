@@ -137,6 +137,16 @@ class ProjectSeeder extends Seeder
                 'desc' => 'Website profil Diskominfo Lhokseumawe ini dibuat sebagai tugas kerja praktek, dirancang untuk menampilkan informasi lengkap tentang instansi Diskominfo secara modern dan interaktif. Menggunakan teknologi Laravel sebagai backend, React.js untuk antarmuka pengguna, dan SQLite sebagai database, website ini menyediakan halaman profil, layanan, berita, serta kontak yang mudah diakses. Dengan tampilan yang responsif dan user-friendly, website ini diharapkan dapat menjadi media informasi yang efektif untuk masyarakat serta memperkuat citra profesional Diskominfo Lhokseumawe.'
             ],
 
+            [
+                'judul' => 'Website Profile Diskominfo Lhokseumawe',
+                'slug' => 'website-profile-diskominfo-lhokseumawe',
+                'category' => 'Web Development',
+                'categoryslug' => 'web-development',
+                'url' => 'https://github.com/MuhammadJundullah/kominfo',
+                'site' => 'https://diskominfo-deploy.vercel.app',
+                'desc' => 'Website ini merupakan platform yang menggabungkan profil dan layanan pengaduan yang dibangun menggunakan React.js di sisi frontend dan Laravel di sisi backend. Halaman ini dirancang untuk memberikan informasi tentang layanan yang ditawarkan serta memberikan kemudahan bagi pengguna untuk mengajukan pengaduan. Dengan menggunakan React.js, tampilan website ini responsif dan dinamis, memungkinkan pengguna untuk berinteraksi dengan sistem secara langsung melalui form pengaduan yang mudah diakses. Sementara itu, Laravel bertanggung jawab untuk mengelola backend, menyediakan REST API untuk komunikasi data yang cepat dan aman antara frontend dan server. Pengguna dapat dengan mudah mengakses profil mereka, mengirimkan laporan pengaduan, dan memantau status pengaduan mereka melalui platform ini. Dengan desain yang user-friendly, website ini bertujuan untuk memberikan pengalaman pengaduan yang efisien dan transparan bagi semua pengguna.'
+            ],
+
             // Tambahkan data lainnya sesuai kebutuhan
         ];
 
