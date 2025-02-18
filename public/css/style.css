@@ -116,3 +116,17 @@ a {
 .custom-link:hover {
     text-decoration: underline;
 }
+
+/* .parallax {
+    background-image: url('images/wall.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    transform: translateY(0);
+    transition: background-position 0.2s ease-out;
+}
+ */

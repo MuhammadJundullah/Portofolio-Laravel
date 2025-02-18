@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('category');
             $table->string('categoryslug');
             $table->string('url')->nullable();
+            $table->string('photo')->nullable();
             $table->string('site')->nullable();
             $table->text('desc')->nullable();
         });

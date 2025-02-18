@@ -1,26 +1,43 @@
 <x-layout>
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <h2 class="display-6 pt-5 mt-5 font-monospace text-secondary">Hello, I'm</h2>
-      <h1 class="display-6 fw-bold text-judul">Sayid Muhammad Jundullah</h1>
-      <p class="lead text-dark fw-light"><span class="text-dark fw-lighter">Interest in </span>Data Science <span class="text-secondary fw-lighter">|</span> Data Analytics <span class="text-secondary fw-lighter">|</span> Web Development</p>
-
-      <!-- get sayid's resume -->
-      {{-- <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary"><a class="icon-link icon-link-hover" style="color: aliceblue; text-decoration: none;" href="https://drive.google.com/file/d/1lwsONfgXmJMU714ltBliS5EJn3D04Nzi/view?usp=share_link" target="_blank">Get Sayid's CV &raquo</a></button>
-        <!-- <button type="button" class="btn btn-success"><a class="icon-link icon-link-hover" style="color: aliceblue; text-decoration: none;" href="https://api.whatsapp.com/send?phone=6285766267769&text=Halo,%20apakah%20bisa%20membuat%20wesite%20untuk%20saya%20?">Whatsapp</a></button> -->
-      </div> --}}
-
-      <!-- akhir get sayid's resume -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="pt-5 mt-5">
+    <div class="parallax" style=" background-image: url('images/jkt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    transform: translateY(0);
+    /* transition: background-position 0.2s ease-out;"> */
+      <div class="row mt-5 d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6">
+            <img class="img-fluid rounded-circle w-50 d-block mx-auto border" src="images/ahmad.JPG" alt="me">
+          </div>
+          <div class="col-12 col-lg-6 text-light">
+            <h2 class="display-5 pt-5 mt-5 font-monospace text-secondary">Hello, I'm</h2>
+            <h1 class="display-5 fw-bold text-judul">Sayid Muhammad Jundullah</h1>
+            <p class="fs-4 fw-light"><span class="fw-lighter">Interest in </span>Data Science <span class="fw-lighter">|</span> Data Analytics <span class="fw-lighter">|</span> Web Development</p>
+      
+            <!-- get sayid's resume -->
+            {{-- <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary"><a class="icon-link icon-link-hover" style="color: aliceblue; text-decoration: none;" href="https://drive.google.com/file/d/1lwsONfgXmJMU714ltBliS5EJn3D04Nzi/view?usp=share_link" target="_blank">Get Sayid's CV &raquo</a></button>
+              <!-- <button type="button" class="btn btn-success"><a class="icon-link icon-link-hover" style="color: aliceblue; text-decoration: none;" href="https://api.whatsapp.com/send?phone=6285766267769&text=Halo,%20apakah%20bisa%20membuat%20wesite%20untuk%20saya%20?">Whatsapp</a></button> -->
+            </div> --}}
+      
+            <!-- akhir get sayid's resume -->
+          </div>
+        </div>
+      </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#f8f9fa"
           fill-opacity="1"
           d="M0,96L48,90.7C96,85,192,75,288,85.3C384,96,480,128,576,165.3C672,203,768,245,864,245.3C960,245,1056,203,1152,181.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-    </section>
+    </div>
     <!-- Akhir Jumbotron -->
 
     <!-- About Me -->
@@ -33,9 +50,9 @@
         </div>
         <div class="row text-center fs-5 justify-content-around mb-5">
           <div class="col-md-10 fw-light">
-               <p class="fs-6">
-                  Saya mahasiswa  semester 5 jurusan Teknik Informatika di Universitas Malikussaleh dengan IPK 3,56 / 4.00, saya sangat tertarik mempelajari hal baru terkakit teknologi, terutama dalam bidang data dan pengembangan web. Saya senang belajar secara otodidak dari sumber terbuka seperti youtube, artikel dsb.   
-                  <span class="more" style="display: none">Saya juga aktif mengikuti beberapa course bersertifikat, untuk meningkatkan pemahaman, pengetahuan dan skill saya dalam pengolahan data dan pengembangan web. Untuk melatih kemampuan saya dalam hal tersebut saya memiliki beberapa proyek yang saya kerjakan, seperti tugas web sederhana di perkuliahan dan berkontribusi untuk mencari solusi permasalahan bisnis di situs kaggle.com berdasarkan data yang disediakan secara tebuka. Saya bersedia untuk berkolaborasi untuk menyelesaikan permasalahan di bidang data dan pengembangan web. Saat ini, saya mencari kesempatan magang untuk mengembangkan kemampuan dan menambah pengalaman saya di bidang data untuk posisi seperti Data Analyst, Data Scientist atau pengembangan web seperti Front End Web Developer, Back End Web Developer khususnya Laravel di lingkungan professional. Jika Anda membutuhkan informasi lebih lanjut atau ingin mendiskusikan peluang kerja sama, jangan ragu untuk menghubungi saya. Saya dengan senang hati akan menjawab pertanyaan atau memberikan informasi tambahan yang Anda perlukan. Anda dapat menghubungi saya melalui sosial media saya di bawah ini.</span>
+               <p class="fs-5">
+                  I am a 5th semester Informatics Engineering student at Malikussaleh University with a GPA of 3.56 / 4.00, I am very interested in learning new things about technology, especially in the field of data and web development. I enjoy learning autodidactically from open sources such as YouTube, articles, etc. I also actively take several certified courses, to improve my understanding, knowledge and skills in data processing and web development.
+                  <span class="more" style="display: none">To train my abilities in this regard, I have several projects that I work on, such as simple web assignments in lectures and contributing to finding solutions to business problems on the kaggle.com site based on data provided openly. I am willing to collaborate to solve problems in the field of data and web development. Currently, I am looking for internship opportunities to develop my skills and gain experience in the data field for positions such as Data Analyst, Data Scientist or web development such as Front End Web Developer, Back End Web Developer especially Laravel in a professional environment. If you need more information or want to convey opportunities for collaboration, do not hesitate to contact me. I will be happy to answer questions or provide additional information that you need. You can contact me through my social media below.</span>
                   <a href="#" id="read-more" onclick="toggleText(event)">Read More...</a>
               </p>
             <!-- Instagram -->
@@ -75,15 +92,17 @@
 
             <!-- Card Projects -->
 
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                      <div class="card animate">
-                          <div class="card-body" >
-                              <h5 class="card-title fw-light">{{ $project->judul }}</h5>
-                              <p class="card-text fw-lighter text-0secondary">{{ $project->category }}.</p>
-                              <a class="text-success custom-link" href="/{{ $project->categoryslug }}/{{ $project->slug }}">Details &raquo;</a>                          
-                          </div>
-                      </div>
-                  </div>
+             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card animate">
+                    <div class="card-body">
+                        <img class="img-fluid w-100 rounded" src="images/projects/{{$project->photo ?? 'project.webp'}}" alt="image">
+                        <h5 class="card-title fw-light mt-2">{{ $project->judul }}</h5>
+                        <p class="card-text fw-lighter text-secondary">{{ $project->category }}.</p>
+                        <a class="text-success custom-link" href="/{{ $project->categoryslug }}/{{ $project->slug }}">Details &raquo;</a>                          
+                    </div>
+                </div>
+            </div>
+
 
             <!-- Card Projects -->
 
@@ -113,7 +132,7 @@
         <!-- items -->
         <div class="row ">
 
-          @foreach ($certificates as $index => $certificate)  <!-- Tambahkan index untuk memberikan ID unik -->
+          @foreach ($certificates as $index => $certificate)
 
               <!-- Modal -->
               <div class="modal fade" id="imageModal{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel{{ $index }}" aria-hidden="true">
@@ -187,3 +206,10 @@
     <p style="margin:10px;" class="fs-6 fw-lighter text-secondary text-center"><i>*This portfolio was last updated {{ $lastupdate->created_at->format('F j, Y, \a\t g:i A') }}.</i></p>    
 
 </x-layout>
+
+<script>
+  window.addEventListener("scroll", function() {
+    let scrolled = window.scrollY;
+    document.querySelector(".parallax").style.backgroundPositionY = +(scrolled * 0.2) + "px";
+});
+</script>
