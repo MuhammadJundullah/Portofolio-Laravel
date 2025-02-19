@@ -1,7 +1,7 @@
 <x-layout>
 
     <!-- Jumbotron -->
-    <div class="parallax" style=" background-image: url('images/jkt.jpg');
+    <div class="parallax" style=" background-image: url('images/abu.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,10 +13,10 @@
       <div class="row mt-5 d-flex flex-column flex-md-row align-items-center text-center text-md-start">
         <div class="row mt-5">
           <div class="col-12 col-lg-6">
-            <img class="img-fluid rounded-circle w-50 d-block mx-auto border" src="images/ahmad.JPG" alt="me">
+            <img class="img-fluid rounded-circle w-50 d-block mx-auto border border-dark" src="images/ahmad.JPG" alt="me">
           </div>
-          <div class="col-12 col-lg-6 text-light">
-            <h2 class="display-5 pt-5 mt-5 font-monospace text-secondary">Hello, I'm</h2>
+          <div class="col-12 col-lg-6 text-dark">
+            <h2 class="display-5 pt-md-5 mt-md-5 pt-5 font-monospace text-secondary">Hello, I'm</h2>
             <h1 class="display-5 fw-bold text-judul">Sayid Muhammad Jundullah</h1>
             <p class="fs-4 fw-light"><span class="fw-lighter">Interest in </span>Data Science <span class="fw-lighter">|</span> Data Analytics <span class="fw-lighter">|</span> Web Development</p>
       
@@ -27,6 +27,7 @@
             </div> --}}
       
             <!-- akhir get sayid's resume -->
+
           </div>
         </div>
       </section>
@@ -41,7 +42,7 @@
     <!-- Akhir Jumbotron -->
 
     <!-- About Me -->
-    <section id="about" class="section-hidden bg-light">
+    <section id="about" class="section-hidden bg-light" style="margin-top: -3px">
       <div class="container">
         <div class="row text-center mb-3 mt-5">
           <div class="col fw-light">
@@ -103,7 +104,6 @@
                 </div>
             </div>
 
-
             <!-- Card Projects -->
 
             @endforeach
@@ -156,7 +156,6 @@
 
           @endforeach
 
-
         </div>
         <!-- akhir items -->
 
@@ -198,18 +197,18 @@
             @endforeach
 
           </div>
+          <p style="margin:10px; margin-top: 100px;" class="fs-6 fw-lighter text-secondary text-center"><i>*This portfolio was last updated {{ $lastupdate->created_at->format('F j, Y, \a\t g:i A') }}.</i></p>    
         </div>
       </div>
     </section>
-    <!-- Akhir Education -->
 
-    <p style="margin:10px;" class="fs-6 fw-lighter text-secondary text-center"><i>*This portfolio was last updated {{ $lastupdate->created_at->format('F j, Y, \a\t g:i A') }}.</i></p>    
+    <!-- Akhir Education -->
 
 </x-layout>
 
 <script>
   window.addEventListener("scroll", function() {
     let scrolled = window.scrollY;
-    document.querySelector(".parallax").style.backgroundPositionY = +(scrolled * 0.2) + "px";
+    document.querySelector(".parallax").style.backgroundPositionY = +(scrolled * 0.3) + "px";
 });
 </script>
