@@ -1,33 +1,41 @@
+{{-- style="
+        background-image: url('images/abu.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+        background-attachment: fixed;
+        transform: translateY(0); */
+        transition: background-position 0.2s ease-out;" --}}
+
 <x-layout>
 
-    <!-- Jumbotron -->
-    <div class="parallax" style=" background-image: url('images/abu.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-    background-attachment: fixed;
-    transform: translateY(0);
-    /* transition: background-position 0.2s ease-out;"> */
-      <div class="row mt-5 d-flex flex-column flex-md-row align-items-center text-center text-md-start">
-        <div class="row mt-5">
-          <div class="col-12 col-lg-6">
-            <img class="img-fluid rounded-circle w-50 d-block mx-auto border border-dark" src="images/ahmad.JPG" alt="me">
-          </div>
-          <div class="col-12 col-lg-6 text-dark">
-            <h2 class="display-5 pt-md-5 mt-md-5 pt-5 font-monospace text-secondary">Hello, I'm</h2>
-            <h1 class="display-5 fw-bold text-judul">Sayid Muhammad Jundullah</h1>
-            <p class="fs-4 fw-light"><span class="fw-lighter">Interest in </span>Data Science <span class="fw-lighter">|</span> Data Analytics <span class="fw-lighter">|</span> Web Development</p>
-      
-            <!-- get sayid's resume -->
-            {{-- <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-secondary"><a class="icon-link icon-link-hover" style="color: aliceblue; text-decoration: none;" href="https://drive.google.com/file/d/1lwsONfgXmJMU714ltBliS5EJn3D04Nzi/view?usp=share_link" target="_blank">Get Sayid's CV &raquo</a></button>
-              <!-- <button type="button" class="btn btn-success"><a class="icon-link icon-link-hover" style="color: aliceblue; text-decoration: none;" href="https://api.whatsapp.com/send?phone=6285766267769&text=Halo,%20apakah%20bisa%20membuat%20wesite%20untuk%20saya%20?">Whatsapp</a></button> -->
-            </div> --}}
-      
-            <!-- akhir get sayid's resume -->
+  <!-- Jumbotron -->
+      <section>
+        <div class="parallax"> 
+          <div class="row mt-5 d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+            <div class="row mt-5 justify-content-enter align-items-center">
+              <div class="col-12 col-lg-6 text-center text-lg-start">
+                <img class="img-fluid rounded-circle w-70 d-block mx-auto mx-lg-auto" src="images/ahmad/ahmad-formal-almet-nobg.png" alt="me" style="margin-left: auto; margin-right: auto;">
+              </div>
+              <div class="col-12 col-lg-6 text-dark text-center text-lg-start">
+                <h2 class="display-5 pt-md-5 mt-md-5 pt-5 font-monospace text-secondary">
+                  <span id="typed-text"></span><span class="cursor">|</span>
+                </h2>
+                <h1 class="display-6 fw-bold text-judul">Sayid Muhammad Jundullah</h1>
+                <p class="fs-4 fw-light">Web Developer | Data Enthusiast.</p>
+                
+                <!-- get sayid's resume -->
+                {{-- <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary"><a class="icon-link icon-link-hover" style="color: aliceblue; text-decoration: none;" href="https://drive.google.com/file/d/1lwsONfgXmJMU714ltBliS5EJn3D04Nzi/view?usp=share_link" target="_blank">Get Sayid's CV &raquo</a></button>
+                  <!-- <button type="button" class="btn btn-success"><a class="icon-link icon-link-hover" style="color: aliceblue; text-decoration: none;" href="https://api.whatsapp.com/send?phone=6285766267769&text=Halo,%20apakah%20bisa%20membuat%20wesite%20untuk%20saya%20?">Whatsapp</a></button> -->
+                </div> --}}
+                
+                <!-- akhir get sayid's resume -->
 
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -52,9 +60,9 @@
         <div class="row text-center fs-5 justify-content-around mb-5">
           <div class="col-md-10 fw-light">
                <p class="fs-5">
-                  I am a 5th semester Informatics Engineering student at Malikussaleh University with a GPA of 3.56 / 4.00, I am very interested in learning new things about technology, especially in the field of data and web development. I enjoy learning autodidactically from open sources such as YouTube, articles, etc. I also actively take several certified courses, to improve my understanding, knowledge and skills in data processing and web development.
-                  <span class="more" style="display: none">To train my abilities in this regard, I have several projects that I work on, such as simple web assignments in lectures and contributing to finding solutions to business problems on the kaggle.com site based on data provided openly. I am willing to collaborate to solve problems in the field of data and web development. Currently, I am looking for internship opportunities to develop my skills and gain experience in the data field for positions such as Data Analyst, Data Scientist or web development such as Front End Web Developer, Back End Web Developer especially Laravel in a professional environment. If you need more information or want to convey opportunities for collaboration, do not hesitate to contact me. I will be happy to answer questions or provide additional information that you need. You can contact me through my social media below.</span>
-                  <a href="#" id="read-more" onclick="toggleText(event)">Read More...</a>
+                  I am a 6th-semester Informatics student with an interest in web development and open to freelance projects. I have experience in web development using Laravel, React JS, Vue JS, as well as skills in data dashboarding using Tableau, Power BI, Google Looker Studio, and simple data prediction with Python for data analysis. I am willing to join a team to work while learning together.
+                  {{-- <span class="more" style="display: none">To train my abilities in this regard, I have several projects that I work on, such as simple web assignments in lectures and contributing to finding solutions to business problems on the kaggle.com site based on data provided openly. I am willing to collaborate to solve problems in the field of data and web development. Currently, I am looking for internship opportunities to develop my skills and gain experience in the data field for positions such as Data Analyst, Data Scientist or web development such as Front End Web Developer, Back End Web Developer especially Laravel in a professional environment. If you need more information or want to convey opportunities for collaboration, do not hesitate to contact me. I will be happy to answer questions or provide additional information that you need. You can contact me through my social media below.</span> --}}
+                  {{-- <a href="#" id="read-more" onclick="toggleText(event)">Read More...</a> --}}
               </p>
             <!-- Instagram -->
             <a class="sosmed" href="https://instagram.com/saed.m_" target="_blank"><img src="images/instagram.svg" alt="instagram" style="height: 30px; margin: 5%" /></a>
@@ -211,4 +219,35 @@
     let scrolled = window.scrollY;
     document.querySelector(".parallax").style.backgroundPositionY = +(scrolled * 0.3) + "px";
 });
+
+// animasi ngetik hello i'am
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "Hello, I'm";
+    const typedText = document.getElementById("typed-text");
+    const cursor = document.querySelector(".cursor");
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        typedText.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 150); // Adjust typing speed here
+      } else {
+        setTimeout(erase, 1000); // Pause before erasing
+      }
+        }
+
+    function erase() {
+      if (index > 0) {
+        typedText.textContent = text.substring(0, index - 1);
+        index--;
+        setTimeout(erase, 100); // Adjust erasing speed here
+      } else {
+        cursor.style.display = "inline"; // Show cursor again
+        setTimeout(type, 500); // Pause before typing again
+      }
+        }
+
+    type();
+  });
 </script>
