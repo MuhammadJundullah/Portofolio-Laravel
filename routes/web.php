@@ -19,8 +19,10 @@
 
 use Illuminate\Support\Facades\View;
 use App\Models\Project;
-use Illuminate\Http\Request;
-use GuzzleHttp\Client;
+
+$router->get('/test', function () {
+    return response()->json(['status' => 'ok'], 200);
+});
 
 $router->get('/', 'Controller@index', function () {
     return View::make('/home');

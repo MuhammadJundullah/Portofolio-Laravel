@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('categoryslug');
             $table->string('url')->nullable();
             $table->string('photo')->nullable();
+            $table->string('tech')->nullable();
             $table->string('site')->nullable();
             $table->text('desc')->nullable();
         });

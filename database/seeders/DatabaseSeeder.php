@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Project;
-use App\Models\Predict;
 use Illuminate\Database\Seeder;
 use Database\Seeders\ProjectSeeder;
 use Database\Seeders\CertificateSeeder;
+use Database\Seeders\ExperienceSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,6 +15,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ProjectSeeder::class);
         $this->call(CertificateSeeder::class);
         $this->call(EducationSeeder::class);
-        $this->call(PredictSeeder::class);
+        $this->call(ExperienceSeeder::class);
+        $this->call(JobdeskSeeder::class);
     }
 }

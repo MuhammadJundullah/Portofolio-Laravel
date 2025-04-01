@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
-    protected $table = 'projects'; // Nama tabel di database
-    protected $fillable = ['judul', 'slug', 'category', 'categoryslug', 'url', 'photo', 'site', 'desc']; // Kolom-kolom yang bisa diisi
+    protected $table = 'projects';
+    protected $fillable = ['judul', 'slug', 'category', 'categoryslug', 'url', 'photo', 'tech', 'site', 'desc'];
 
     public $timestamps = false;
 }
