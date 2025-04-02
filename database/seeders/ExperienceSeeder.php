@@ -14,22 +14,22 @@ class ExperienceSeeder extends Seeder
     {
         $experiences = [
             [
-            'company_name' => 'PT Winnicode Garuda Indonesia',
+                'company_name' => 'PT. Winnicode Garuda Indonesia',
             'position' => 'Back-End Developer',
             'duration' => "January 2025 - Present",
-            'type' => 'Remote'
+                'type' => 'Internship - Remote'
             ],
             [
-            'company_name' => 'PT Ide Kreatif Sejahtera Global', 
-            'position' => 'Back-End Laravel Developer', 
-            'duration' => "January 2025 - March 2025",
-            'type' => 'Remote'
+                'company_name' => 'PT. Ide Kreatif Sejahtera Global',
+                'position' => 'Back-End Laravel Developer',
+                'duration' => "January 2025 - March 2025",
+                'type' => 'Internship - Remote'
             ],
             [
-            'company_name' => 'Web Application Development', 
+                'company_name' => 'Puskesmas Kec. Muara Dua Lhokseumawe',
             'position' => 'Full-Stack Web Developer', 
             'duration' => "September 2024 - December 2024",
-            'type' => 'On-Site'
+                'type' => 'Internship - On-Site'
             ],
         ];
 

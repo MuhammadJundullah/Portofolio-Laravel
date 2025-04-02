@@ -9,25 +9,32 @@ use App\Models\Certificate;
 use Illuminate\Support\Facades\View;
 use Laravel\Lumen\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class Controller extends BaseController
 {
     public function index()
     {
-        // Ambil semua data dari tabel products
-        $projects = Project::all();
+        // Simpan data ke cache selama 1 jam (60 menit)
+        $projects = Cache::remember('projects', 60 * 60, function () {
+            return Project::all();
+        });
 
-        // Ambil semua data dari relasi experience dengan jobdesk
-        $experiences = Experience::with('jobdesk')->get();
+        $experiences = Cache::remember('experiences', 60 * 60, function () {
+            return Experience::with('jobdesk')->get();
+        });
 
-        // Ambil semua data dari tabel certificate
-        $certificates = Certificate::all();
+        $certificates = Cache::remember('certificates', 60 * 60, function () {
+            return Certificate::all();
+        });
 
-        // Ambil data tersatas dari tabel certificate
-        $lastupdate = Certificate::latest()->first();
+        $lastupdate = Cache::remember('lastupdate', 60 * 60, function () {
+            return Certificate::latest()->first();
+        });
 
-        // Ambil semua data dari tabel education
-        $educations = Education::all();
+        $educations = Cache::remember('educations', 60 * 60, function () {
+            return Education::all();
+        });
 
         // Kirim data ke view
         return view('home', compact('projects', 'certificates', 'educations', 'lastupdate', 'experiences'));
@@ -35,16 +42,19 @@ class Controller extends BaseController
 
     public function show(Request $request, $slug)
     {
-        // Cari proyek berdasarkan slug
-        $project = Project::where('slug', $slug)->firstOrFail();
+        $cacheKey = "project_{$slug}";
+
+        // Cek apakah data proyek sudah ada di cache
+        $project = Cache::remember($cacheKey, 60 * 60, function () use ($slug) {
+            return Project::where('slug', $slug)->firstOrFail();
+        });
 
         // Nama view berdasarkan category
         $viewName = strtolower($project->categoryslug);
 
-        // Tampilkan view dengan data proyek dan hasil prediksi (jika ada)
+        // Tampilkan view dengan data proyek
         return View::make($viewName, [
             'project' => $project,
         ]);
     }
 }
-    

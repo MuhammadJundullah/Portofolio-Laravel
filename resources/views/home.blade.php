@@ -83,24 +83,25 @@
               <h1 class="font-judul fw-light">Working Experiences</h1>
             </div>
           </div>
-            <div class="row fs-5 justify-content-around mb-5">
-              @foreach ($experiences as $experience)
-                <div>
-                  <div class="card-body m-5">
-                    <h5 class="card-title fw-bold mt-3 mb-3">{{ $experience->position }} at {{ $experience->company_name }}</h5>
-                    <div>
-                      <p class="card-text">{{ $experience->duration }} | {{ $experience->type }}</p>
-                      <p>Job Descriptions:</p>
-                      <ul>
-                        @foreach ($experience->jobdesk as $jobdesk)
-                          <li>{{ $jobdesk->description }}</li>
-                        @endforeach
-                      </ul>
-                    </div>
+          <div class="row fs-5 justify-content-around mb-5">
+            @foreach ($experiences as $experience)
+              <div class="col-12 px-3 px-md-5">
+                <div class="card-body m-3 m-md-5">
+                  <h5 class="card-title fw-bold mt-3 mb-3">
+                    {{ $experience->position }} at {{ $experience->company_name }}
+                  </h5>
+                  <div>
+                    <p class="card-text">{{ $experience->duration }} | {{ $experience->type }}</p>
+                    <p>Job Descriptions:</p>
+                    <ul>
+                      @foreach ($experience->jobdesk as $jobdesk)
+                        <li>{{ $jobdesk->description }}</li>
+                      @endforeach
+                    </ul>
                   </div>
                 </div>
-              @endforeach
-            </div>
+              </div>
+            @endforeach
           </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
