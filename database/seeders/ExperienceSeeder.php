@@ -22,7 +22,7 @@ class ExperienceSeeder extends Seeder
             [
                 'company_name' => 'PT. Ide Kreatif Sejahtera Global',
                 'position' => 'Back-End Laravel Developer',
-                'duration' => "January 2025 - March 2025",
+                'duration' => "January 2025 - April 2025",
                 'type' => 'Internship - Remote'
             ],
             [

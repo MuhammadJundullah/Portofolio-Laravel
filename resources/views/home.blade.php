@@ -91,8 +91,8 @@
                     {{ $experience->position }} at {{ $experience->company_name }}
                   </h5>
                   <div>
-                    <p class="card-text">{{ $experience->duration }} | {{ $experience->type }}</p>
-                    <p>Job Descriptions:</p>
+                    <p class="card-text text-success">{{ $experience->duration }} | {{ $experience->type }}</p>
+                    {{-- <p>Job Descriptions:</p> --}}
                     <ul>
                       @foreach ($experience->jobdesk as $jobdesk)
                         <li>{{ $jobdesk->description }}</li>

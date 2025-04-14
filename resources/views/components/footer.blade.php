@@ -1,6 +1,5 @@
     <!-- Footer -->
-    <p style="margin-bottom: 0px; padding: 1rem;" class="text-dark small text-center">© 2024 Sayid. All right reserved.</p>
-
+    <p style="margin-bottom: 0px; padding: 1rem;" class="text-dark small text-center">© {{ date('Y') }} Sayid. All right reserved.</p>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 

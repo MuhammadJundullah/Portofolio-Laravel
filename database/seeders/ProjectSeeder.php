@@ -132,7 +132,7 @@ class ProjectSeeder extends Seeder
                 'category' => 'Web Development',
                 'categoryslug' => 'web-development',
                 'url' => 'https://github.com/MuhammadJundullah/Belajar_PHP/tree/main/Blog%20Laravel/Blog',
-                'photo' => 'project.webp',
+                'photo' => 'blog.png',
                 'tech' => 'Laravel, Tailwind CSS, Alpine JS',
                 'site' => 'http://blog.portofolio.great-site.net',
                 'desc' => 'This website is a simple blog project built using the Laravel Framework as the backend framework to create a modular, secure, and easy-to-maintain blog website. For the frontend, Tailwind CSS is used for responsive and efficient styling, enabling consistent design across all website pages. Alpine JS is utilized to add simple interactivity on the frontend, implementing an efficient and dynamic routing system with Laravel to ensure smooth navigation and optimal user experience. Database Management: Designed with Eloquent ORM for easy and flexible database management, ensuring seamless integration between the application and the database. Deployment: The website is hosted on a free hosting platform, showcasing skills in deployment and basic server management. Responsive Design: The website is designed with high responsiveness using Tailwind CSS, ensuring optimal display on various devices. SEO Optimization: The website is optimized for SEO with clean HTML structure and appropriate metadata, improving visibility on search engines.'
@@ -187,15 +187,15 @@ class ProjectSeeder extends Seeder
             ],
 
             [
-                'judul' => 'Portal Berita dengan Content-Based Filtering',
-                'slug' => 'portal-berita-content-based-filtering',
+                'judul' => 'News Portal with Content-Based Filtering',
+                'slug' => 'news-portal-content-based-filtering',
                 'category' => 'Web Development',
                 'categoryslug' => 'web-development',
                 'url' => 'https://github.com/MuhammadJundullah/portal-berita',
                 'photo' => 'news_portal.png',
                 'tech' => 'FlaskAPI, Python, Laravel',
                 'site' => '#',
-                'desc' => 'his news portal is designed using Flask as the backend and leverages the News API to fetch the latest news from various sources. The system is also equipped with a content-based filtering feature to recommend relevant news based on user preferences. With a simple and responsive interface, users can easily search for news, read articles, and receive news recommendations tailored to their interests. This project demonstrates the integration of external APIs and the implementation of filtering algorithms to enhance the user experience.'
+                'desc' => 'This news portal is built using Flask as the backend and integrates the News API to fetch the latest news from various sources. The system features a content-based filtering mechanism to recommend relevant news based on user preferences. With a simple and responsive interface, users can easily search for news, read articles, and receive personalized news recommendations. This project highlights the integration of external APIs and the implementation of filtering algorithms to enhance the user experience.'
             ],
 
             [
@@ -208,6 +208,18 @@ class ProjectSeeder extends Seeder
                 'tech' => 'Laravel, RestAPI, Bootstrap, MySQL',
                 'site' => 'https://ideathings.id/education/',
                 'desc' => 'This project is an education platform that hosts various course data and their respective instructors. It includes features for course payments, allowing users to enroll seamlessly. Admins can monitor transactions, manage user and instructor lists, and view course ratings and reviews. Instructors can track customers who enroll in their courses, providing a comprehensive system for managing educational content and interactions.'
+            ],
+
+            [
+                'judul' => 'Simple ETL Pipeline with Airflow and PostgreSQL',
+                'slug' => 'simple-etl-pipeline-airflow-postgresql',
+                'category' => 'Data Engineering',
+                'categoryslug' => 'data-engineering',
+                'url' => 'https://github.com/MuhammadJundullah/airflow-dag-for-data-pipline',
+                'photo' => 'etl_pipeline.png',
+                'tech' => 'Python, Apache Airflow, PostgreSQL, Docker Container',
+                'site' => '-',
+                'desc' => 'This project demonstrates a simple ETL (Extract, Transform, Load) pipeline using Apache Airflow, PostgreSQL, and Docker. The pipeline extracts data from a source, transforms it to meet business requirements, and loads it into a PostgreSQL database. Docker is used to containerize the application, ensuring portability and ease of deployment. The project showcases the use of Airflow for scheduling and monitoring workflows, ensuring data consistency and reliability. It is an excellent example of implementing data engineering concepts in a practical scenario.'
             ],
 
             // Tambahkan data lainnya sesuai kebutuhan

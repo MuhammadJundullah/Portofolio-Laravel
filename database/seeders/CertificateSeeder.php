@@ -56,6 +56,13 @@ class CertificateSeeder extends Seeder
              'date' => '2019',
              'site' => 'https://drive.google.com/file/d/1cpvyMiWUawg8dvedXn6VfBCLDrrg5b51/view?usp=share_link'
             ],
+
+            [
+                'name' => 'magang_ideathings.png',
+                'desc' => 'iDeathings Internship Program.',
+                'date' => '6 April 2025',
+                'site' => 'https://drive.google.com/file/d/1M6K8rtLfdG7RA96CLKfVRWS52AopcGQ4/view?usp=sharing'
+            ],
             // Tambahkan data lainnya sesuai kebutuhan
         ];
 

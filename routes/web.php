@@ -36,6 +36,13 @@ $router->post('/{category}/{slug}', 'Controller@show', function ( Project $proje
     return View::make('{category}');
 });
 
+$router->get('/log', 'Controller@log', function () {
+    return View::make('log');
+});
+
+$router->get('/clear-log', 'Controller@clearLog', function () {
+    return View::make('log');
+});
 
 
 
